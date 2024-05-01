@@ -5,7 +5,7 @@
         {% include 'navbar.html' %}
         <ul>
             {% for x in myclubs %}
-              <li><a href="details/{{ x.id }}">{{ x.name }} {{ x.description }}</a></li>
+              <li><a href="details/{{ x.id }}">{{ x.name }}</a></li>
             {% endfor %}
           </ul>          
     </body>
