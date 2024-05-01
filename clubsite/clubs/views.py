@@ -15,3 +15,11 @@ def clubs(request):
         "myclubs": myclubs
     }
     return HttpResponse(template.render(context, request))
+
+def details(request, id):
+  myclub = Club.objects.get(id=id)
+  template = loader.get_template('details.html')
+  context = {
+    'myclub': myclub,
+  }
+  return HttpResponse(template.render(context, request))
