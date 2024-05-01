@@ -3,6 +3,10 @@
     </head>
     <body>
         {% include 'navbar.html' %}
-        Niklas Carlson
+        <ul>
+            {% for x in myclubs %}
+              <li>{{ x.name }} {{ x.description }}</li>
+            {% endfor %}
+          </ul>          
     </body>
 </html>

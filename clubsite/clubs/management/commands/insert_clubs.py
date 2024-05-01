@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from clubs.models import Club  # Replace "myapp" with your actual app name
+from clubs.models import Club 
 
 class Command(BaseCommand):
     help = 'Insert clubs into the database'
